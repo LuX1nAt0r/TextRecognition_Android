@@ -1,15 +1,20 @@
 package com.llprdctn.textrecognition_android
 
+import android.app.Activity
+import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Environment
+import android.provider.MediaStore
 import android.util.Log
 import android.view.View
 import com.google.mlkit.vision.common.InputImage
 import com.google.mlkit.vision.text.TextRecognition
 import com.google.mlkit.vision.text.latin.TextRecognizerOptions
 import kotlinx.android.synthetic.main.activity_text_recognition.*
+import java.io.File
 
 class TextRecognition : AppCompatActivity() {
 
