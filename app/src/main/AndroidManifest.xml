@@ -3,8 +3,8 @@
     package="com.llprdctn.textrecognition_android">
 
     <uses-feature android:name="android.hardware.camera.any" />
-    <uses-permission android:name="android.permission.CAMERA" />
 
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -13,6 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TextRecognition_Android">
+        <activity
+            android:name=".TextRecognition"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -23,11 +26,9 @@
             </intent-filter>
         </activity>
 
-
         <meta-data
             android:name="com.google.mlkit.vision.DEPENDENCIES"
-            android:value="ocd" />
-
+            android:value="ocr" />
     </application>
 
 </manifest>
